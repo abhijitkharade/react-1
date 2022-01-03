@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+export default function App() {
+  let list = [1, 1, 1];
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row bg-dark text-light p-3 sticky-top">
+        <div className="col h3 ">React</div>
+      </div>
+
+      {list.map((item) => (
+        <div className="row">
+          <div className="col-12 bg-secondary text-light p-3 mb-1 ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+            eos fugiat recusandae accusamus? Illum odit ipsa rem labore
+            officiis, fugiat dignissimos praesentium doloribus delectus
+            similique soluta deserunt! Debitis, expedita facere!
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
-
-export default App;
